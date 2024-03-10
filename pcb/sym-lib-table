@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/lib/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
+  (lib (name "tvs")(type "KiCad")(uri "${KIPRJMOD}/lib/tvs.kicad_sym")(options "")(descr ""))
+  (lib (name "BreadboardBuddy")(type "KiCad")(uri "${KIPRJMOD}/BreadboardBuddy.kicad_sym")(options "")(descr ""))
+)

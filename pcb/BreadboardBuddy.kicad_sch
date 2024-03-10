@@ -1,0 +1,127 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 75.692 56.134)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6770eba5-153e-4da1-9a7e-22ee6a2b4978")
+		(property "Sheetname" "Microcontroller"
+			(at 75.692 55.4224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 75.692 60.5286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BreadboardBuddy"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 75.438 83.82)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87cbadf1-0674-4bfd-aa47-853fc968bb4b")
+		(property "Sheetname" "Power"
+			(at 75.438 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 75.438 88.2146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BreadboardBuddy"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 75.692 68.326)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9083d7ce-70ca-4f3a-bdf1-372834a5669a")
+		(property "Sheetname" "Connectors"
+			(at 75.692 67.6144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 75.692 72.7206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BreadboardBuddy"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
