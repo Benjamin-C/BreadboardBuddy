@@ -1,0 +1,71 @@
+\documentclass[12pt,letterpaper]{article}
+
+% My defaults
+\usepackage[nosections,onlysubsectionlabels,onlysubsubsectionlabels,lettersubsubsections]{preamble}
+
+\renewcommand\thesubsection{\alph{subsection}.}
+\renewcommand\thesection{\arabic{section}.}
+
+% Proper underscores
+% (1) choose a font that is available as T1
+\usepackage{lmodern}
+% (2) specify encoding
+\usepackage[T1]{fontenc}
+% (3) load symbol definitions
+\usepackage{textcomp}
+
+\usepackage{tabularx}
+
+% Remove labels from parts. Might leave white space :(
+% Also reset section numbering
+\renewcommand{\partname}{\setcounter{section}{0}Problem}
+% \renewcommand{\partname}{\setcounter{section}{0}\vspace{-1.5em}Problem}
+\renewcommand{\thepart}{\arabic{part}}
+
+\usepackage[explicit]{titlesec}
+
+\lstset{
+    breaklines,
+    style=,
+    language=,
+    postbreak=,
+    % language=python,
+    % xleftmargin=0pt,
+    % xrightmargin=0pt,
+    framexleftmargin=0pt,
+    framexrightmargin=0pt,
+    %   basicstyle={\fontsize{10pt}{12pt}\ttfamily},
+    %   columns=flexible,
+    %   keepspaces=true,
+    %   showstringspaces=false,
+    %   identifierstyle=\color[rgb]{0.17,0.39,0.85},
+    %   keywordstyle=\color[rgb]{0.86,0.15,0.37},
+    %   commentstyle=\color[rgb]{0.5,0.5,0.5},
+    frame=ltrb,
+    numbers=none, 
+    % numberstyle=\color{blue}\small, 
+    % numbersep=8pt,
+    backgroundcolor=\color[rgb]{0.95,0.99,0.99},
+    %   tabsize=4,
+}
+
+\let\oldbf\bf
+\renewcommand{\bf}[1]{
+    {\oldbf #1}
+}
+
+\usepackage{chngcntr}
+\counterwithin{table}{section}
+\counterwithin{table}{subsection}
+
+\title{\huge Breadboard Buddy}
+\author{{\Large Benjamin Crall}}
+\date{Rev 0.1 - March 10}
+
+% The stuffs
+\begin{document}
+\maketitle
+
+some text
+
+\end{document}

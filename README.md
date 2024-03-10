@@ -23,7 +23,7 @@ TODO check HV caps if they are actually HV
 
 ### System
 * Microcontroller: RP2040
-* Flash: 16Mbit
+* Flash: 2MB
 
 ### Peripherials
 * 16 GPIO pins capable of input with pull up/down and constant or PWM output.
@@ -117,12 +117,16 @@ The mode command sets up digital pins. `OUTPUT` sets the pin up as an output and
 Handles aliases for pins. The first field is either `D` or `A` to specify if you are using a digital or an analog pin. The second field is the new name for that pin. Names may only contain letters and numbers, and must contain at least one letter. If the pin is specified by name, the pin will be renamed. If queried by number, the name of that pin is returned. If queried by name, the number of that pin is returned.
 
 ### Digital
-The digital command interacts with digital pins. The field is the value to set. `HIGH`,`1`,`ON`, and `TRUE` all set the output of an output pin to high or 100% duty cycle if it is PWM. `LOW`,`0`,`OFF` and `FALSE` set the output to low or 0% duty cycle. Attempting to set input pins has no effect. Querying output pins returns their set value. Querying input pins returns the value read from that pin.
+The digital command interacts with digital pins. The field is the value to set. Setting a PWM pin to high or low will result in 100% or 0% duty cycle respectively. Attempting to set input pins has no effect. Querying output pins returns their set value. Querying input pins returns the value read from that pin. The result of the query will be `H`, `L`, or `0.###`
 
 ### Analog
-Queries analog pins. The Analog command is always assumed to be a query.
+Queries analog pins. The Analog command is always assumed to be a query. The result of the query will be `0.###`
 
 ### Read
+Reads the value of one or more pins. You can mix analog and digital pins. The Read command is always assumed to be a query. The result of the query will be `H`, `L`, or `0.###`
+
+### Binary
+Gets the digital value of pins. The result will be `0` or `1`. If an analog pin is specified, the output will be `0` if the voltage is less than half, `1` otherwise. This command can also be used to set the value of digital pins; in this case it will be treated as an alias of the Digital command.
 
 
 # The Power System
@@ -174,3 +178,7 @@ This is the USB power input. It is used to supply the voltage regulators if EXT 
 
 ### VBUS
 This is the power domain that powers the voltage regulators. It is powered by EXT if it is present, or USB. It is not accessible externally.
+
+# Credits
+* The center positive symbol came from [Wikipedia](https://en.m.wikipedia.org/wiki/File:Polarity_marking_center_positive.svg). The image is in the public domain.
+* The firmware is built on top of [CircuitPython](https://circuitpython.org/)
