@@ -25,7 +25,7 @@ TODO check HV caps if they are actually HV
 * Microcontroller: RP2040
 * Flash: 2MB
 
-### Peripherials
+### Peripherals
 * 16 GPIO pins capable of input with pull up/down and constant or PWM output.
 * 4 analog inputs
 * 1 LED connected to GPIO16

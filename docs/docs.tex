@@ -1,10 +1,10 @@
 \documentclass[12pt,letterpaper]{article}
 
 % My defaults
-\usepackage[nosections,onlysubsectionlabels,onlysubsubsectionlabels,lettersubsubsections]{preamble}
+\usepackage[]{preamble}
 
-\renewcommand\thesubsection{\alph{subsection}.}
-\renewcommand\thesection{\arabic{section}.}
+% \renewcommand\thesubsection{\alph{subsection}.}
+% \renewcommand\thesection{\arabic{section}.}
 
 % Proper underscores
 % (1) choose a font that is available as T1
@@ -58,6 +58,94 @@
 \counterwithin{table}{section}
 \counterwithin{table}{subsection}
 
+\usepackage{tcolorbox}
+\newtcbox{\codebox}{
+    nobeforeafter,
+    tcbox raise base,
+    left=3pt,
+    right=3pt,
+    top=3pt,
+    bottom=2pt,
+    arc=1pt,
+    boxsep=0pt,
+    colback=gray!10,
+    colframe=gray!50,
+    boxrule=0.5pt,
+}
+\MakeRobust\codebox
+
+\let\oldcode\code
+\renewcommand{\code}[1]{
+    \hspace{-0.4em}\codebox{\oldcode{#1}}\hspace{-0.4em}
+}
+
+\newtcbox{\excodebox}{
+    nobeforeafter,
+    tcbox raise base,
+    left=5pt,
+    right=5pt,
+    top=4pt,
+    bottom=3pt,
+    arc=1pt,
+    boxsep=0pt,
+    colback=blue!80!red!90!white,
+    colframe=blue!40,
+    fontupper=\color{white},
+    boxrule=0.5pt,
+}
+\MakeRobust\excodebox
+
+\newcommand{\excode}[1]{
+    \hspace{-0.4em}\excodebox{\oldcode{#1}}\hspace{-0.4em}
+}
+
+\newcommand{\example}[2]{
+    \begin{tcolorbox}[
+        colback=blue!80!red!10!white,
+        colframe=blue!80!red,
+        arc=2pt,
+        left=3pt,
+        right=3pt,
+        top=3pt,
+        bottom=2pt,
+        boxrule=0.5pt,
+        title={Example #1}
+    ]
+    #2
+    \end{tcolorbox}
+}
+
+\newcommand{\examplecmd}[3]{
+    \example{}{
+        \renewcommand*{\arraystretch}{1.5}
+        \begin{tabular}{p{0.15\textwidth}p{0.75\textwidth}}
+            \textbf{Task} & #1 \\
+            \textbf{Command} &  \code{#2} \\
+            \textbf{Response} & \code{#3}
+        \end{tabular}
+    }
+}
+
+\usepackage{booktabs}
+
+\let\oldhref\href
+\renewcommand{\href}[2]{
+    {\color{blue}\underline{\oldhref{#1}{#2}}}
+}
+
+\let\oldurl\url
+\renewcommand{\url}[1]{
+    {\color{blue}\underline{\oldurl{#1}}}
+}
+
+\newcommand{\bolditem}[1]{
+    \par
+    \vspace{0.5em}
+    \noindent\textbf{#1: }
+}
+
+\newcommand{\thickrule}{\noalign{\hrule height 1.2pt}}
+
 \title{\huge Breadboard Buddy}
 \author{{\Large Benjamin Crall}}
 \date{Rev 0.1 - March 10}
@@ -66,6 +154,218 @@
 \begin{document}
 \maketitle
 
-some text
+\section{Introduction}
 
+\section{Specs}
+
+\subsection{Power}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|cc|c|c|c|c|}\hline
+        Parameter      &      & Min & Typ & Max & Unit \\\hline
+        Input Voltage  & USB  &     & 5   &     & V    \\
+                       & EXT  & 5   & 12  & 30  & V    \\
+                       & AIN  & 0   &     & 3.3 & V    \\
+                       & GPIO & 0   &     & 3.3 & V    \\\hline
+        Input Current  & USB  &     &     & 0.5 & A    \\
+                       & EXT  &     &     & 2   & A    \\
+                       & GPIO &     &     & 10  & mA   \\\hline
+        Output Voltage & 3v3  &     & 3.3 &     & V    \\
+                       & 3v3A &     & 3.3 &     & V    \\
+                       & GPIO & 0   &     & 3.3 & V    \\\hline
+        Output Current & 3v3  & 0.5 &     & 2   & A    \\
+                       & 3v3A &     &     & 300 & mA   \\
+                       & GPIO &     &     & 10  & mA   \\\hline
+    \end{tabular}
+\end{table}
+
+\subsection{System}
+\begin{itemize}
+    \item Microcontroller: RP2040
+    \item Flash: 2MB
+\end{itemize}
+
+\subsection{Peripherals}
+\begin{itemize}
+    \item 16 GPIO pins capable of input with pull up/down and constant or PWM output.
+    \item 4 analog inputs
+    \item 1 LED connected to GPIO16
+    \item 1 barrel jack switch connected to GPIO17
+    \item 1 button connected to GPIO18
+\end{itemize}
+
+\section{Setup}
+
+\subsection{Wiring}
+Connect the Breadboard Buddy to a breadboard's power rails. Ensure that the positive and negative outputs go to the red and blue sides of each rail. Connect external circuitry to the GPIO or analog pins. If you are doing a lot of analog circuitry, you may with to configure the right rail to be disconnected and manually connect 3v3A there instead. If you are using any voltage higher than 3.3V in your circuit, ensure that it can not reach any of the input pins to the microcontroller.
+
+Connect the USB port of the Breadboard Buddy to your computer, and open and connect your favorite serial monitor.
+
+\subsection{Configuration}
+
+The right power rail can be configured to output 3v3, EXT, or USB by moving the jumper near the barrel jack. Removing this jumper disconnects that power rail.
+
+Each pin that you want to be an output will have to be explicitly set up as such by using the `mode` command. GPIO pins can be set up as digital inputs or outputs, or PWM outputs. Analog pins can only be set up as analog inputs.
+
+\subsection{Firmware}
+The Breadboard Buddy firmware runs on CircuitPython. To Install it:
+\begin{enumerate}
+    \item Download CircuitPython for the Raspberry Pi Pico from \\\url{https://circuitpython.org/board/raspberry_pi_pico/}
+    \item Connect the Breadboard Buddy to your computer. Disconnect anything else from the Breadboard Buddy.
+    \item \label{step:install:off} Press and hold the \code{Reset} button, then press and hold the \code{Boot} button
+    \item \label{step:install:on} Release the \code{Reset} button then release the \code{Boot} button.
+    \item The Breadboard buddy should appear as a USB mass storage device named \code{RPI-RP2}. If this does not happen, try steps \ref{step:install:off} and \ref{step:install:on} again, waiting longer between actions. If the issue precisest, you have an issue with your hardware.
+    \item Copy CircuitPython file you just downloaded onto the Breadboard Buddy. The file should be \code{adafruit-circuitpython-raspberry\_pi\_pico-en\_US-<version>.uf2}.\\The Breadboard Buddy should reboot when the upload is complete.
+    \item The Breadboard Buddy should now appear as a USB mass storage device named \code{CIRCUITPY}. If this does not happen, try again from step \ref{step:install:off}. If the issue precisest, you have an issue with your hardware.
+    \item  Copy \code{code.py} from \code{firmware} onto the Breadboard Buddy. The Breadboard Buddy should blink its light several times. You have now installed the Breadboard Buddy firmware.
+\end{enumerate}
+\noindent
+It is possible to run other software on the Breadboard Buddy either through CircuitPython or by flashing it yourself. This guide will not help you with that.
+
+\section{Usage}
+The Breadboard Buddy is interfaced with by sending commands over serial and reading their response.
+
+\subsection{Pins}
+\subsubsection{Pin Fields}
+For commands that take a pin as a field, there are several ways the pin can be specified.
+
+\bolditem{By number}
+Pins can be specified by number. Digital pins are 0-15. Analog pins are ain0-ain4. Example: \code{5}, \code{12}, \code{3}, \code{ain2}
+
+\bolditem{By Name}
+Pins can also be set up to be identified by a name. Names can be used in place of numbers. Names must be unique for each pin, and each pin can only have 1 alias. Names may contain letters and numbers, but no dashes, spaces, or other characters. Names must start with a letter. Names are not case sensitive, but the given case is stored. Example: \code{LED}, \code{BitClk}, \code{Q}, \code{Addr2}
+
+\bolditem{By range}
+Pins can be specified by a range. Ranges are specified by a start pin then a dash then the end pin. Ranges are inclusive. The range will be evaluated in the order given. If names are used, they will be converted to pin numbers before the range is calculated. Names and numbers can be mixed. You may not mix analog and digital pins in a range. Example: \code{0-7}, \code{ADDR0-ADDR4}, \code{ain0-ain3}
+
+\bolditem{By list}
+Pins can be specified by a list. Lists are comma separated. The command will execute on each pin in the order they are specified. Names and numbers can be mixed. Example: \code{1,2,8,4}, \code{ADDR0,ADDR1,ADDR2}
+
+\subsubsection{Pin States}
+
+\bolditem{Digital}
+Digital pins can be either high, low, or a PWM value. When specifying the state of a pin, you can use
+\begin{itemize}
+    \item \code{H}, \code{HIGH}, \code{1}, \code{ON} for high output
+    \item \code{L}, \code{LOW}, \code{0}, \code{OFF} for low output
+    \item Numbers from 0.000 to 1.000 (only if the pin is configured as PWM)
+\end{itemize}
+Note that \code{ON} and \code{OFF} should be avoided if you are using active low logic to avoid confusion since they do not reverse for active low signals.
+
+\bolditem{Analog}
+Analog pins will return the voltage on that pin in the form \code{\#.\#\#\#}. Analog pins can not be set to values.
+
+\subsection{Commands}
+There are two forms of commands, questions and instructions.
+
+\bolditem{Instructions}
+An instruction tells the Breadboard Buddy to do something. This could be to change a configuration field, or set an output value. Most instructions will take the form \code{<instruction> <field> <value>}. If no value is provided, the command will be assumed to be a question.
+
+\bolditem{Questions}
+Questions are asked in the form \code{<question>[?] <field>}. While the question mark is not required, it is encouraged since any command given with a question mark will be interpreted as a question, even if values are given (in which case they will be ignored).
+\vspace{1em}
+
+Some commands have a short form and a long form. The short form is the part of the long form shown in CAPS. Either form is acceptable. No part of a command is case sensitive. Multiple fields are separated by spaces. Commands listed with a \code{?} are read only. 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{0.2\linewidth}|p{0.25\linewidth}|p{0.45\linewidth}|}\hline
+        Command & Fields             & Action \\\thickrule
+        Mode    & Pin mode           & Sets/gets the mode of a digital pin \\\hline
+        Name    & Pin name           & Sets/gets the name of a pin \\\hline
+        Digital & Digital pin states & Sets/gets value of a digital pin(s) \\\hline
+        Analog? & none               & Gets the value of an analog pin(s) \\\hline
+        Read?   & none               & Gets the value on any pin(s) \\\hline
+        Bin     & `0`,`1`            & Sets/gets the value of pin(s) in binary\\\hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Mode}
+The mode command sets the mode of the digital pins. If queried, returns the configuration of the pin. The options for mode are:
+\bolditem{\texttt{OUTPUT}} sets the pin up as an output and sets the pin's value to low. Output pins can can drive their value to either \code{HIGH} or \code{LOW}.
+\bolditem{\texttt{INPUT}} sets the pin up as an input pin without any pull. Input pins are left floating and must be driven externally for constant results.
+\bolditem{\texttt{PULLUP}} sets the pin up as an input pin with a weak pull up. The pin will read as high unless something externally drives it low.
+\bolditem{\texttt{PULLDOWN}} sets the pin up as an input pin with a weak pull up. The pin will read as low unless something externally drives it high.
+\bolditem{\texttt{PWM}} sets the pin up as a \href{https://en.wikipedia.org/wiki/Pulse-width\_modulation}{Pulse Width Modulated} output. PWM outputs can output psudo-analog values by alternately driving the output high and low and changing the ratio of high to low.
+\examplecmd{Sets up pin 4 as an output}{mode 4 OUTPUT}{OK}
+
+\subsubsection{Name}
+Handles aliases for pins. The first field is the new name for that pin. Names may only contain letters and numbers, and must contain at least one letter. If the pin is specified by name, the pin will be renamed. Only a single pin may be specified when setting a name. If queried by number, the name of that pin is returned. If queried by name, the number of that pin is returned.
+\examplecmd{Sets the alias for pin 14 to \code{CLK}}{name 14 CLK}{OK}
+\examplecmd{Gets the alias for pin 14}{name? 14}{CLK}
+
+\subsubsection{Digital}
+The digital command interacts with digital pins. The field is the value to set. Setting a PWM pin to high or low will result in 100\% or 0\% duty cycle respectively. Attempting to set input pins has no effect. Querying output pins returns their set value. Querying input pins returns the value read from that pin. The result of the query will be \code{H}, \code{L}, or \code{0.\#\#\#}
+\examplecmd{Get the values from pins 8-11}{digital? 8-11}{HLHH}
+\examplecmd{Set the values from pins 8-11 to LHHL}{digital 8-11 L,H,H,L}{OK}
+
+\subsubsection{Analog}
+Queries analog pins. The Analog command is always assumed to be a query. The result of the query will be the voltage on the analog pin in the form \code{\#.\#\#\#}
+\examplecmd{Get the values from pins ain2}{analog? ain2}{2.851}
+
+\subsubsection{Read}
+Reads the value of one or more pins. You can mix analog and digital pins. The Read command is always assumed to be a query. The result of the query will be the same as would be returned from \code{Digital?} and \code{Analog?} for each pin.
+\examplecmd{Get the values from pins 0-5}{read? 5-0}{HHLHLH}
+
+\subsubsection{Binary}
+\bolditem{Question}
+Gets the digital value of pins. The result will be \code{0} or \code{1}. If an analog pin is specified, the output will be \code{0} if the voltage is less than half of the maximum, \code{1} otherwise. An optional field specifies the number format, either \code{DEC}, \code{HEX}, or \code{BIN} (default). The number will be padded so that the number of characters won't change depending on the values of the pins.
+\bolditem{Instruction}
+Sets the pin(s) based on the binary value of the field value. The pins are specified MSB first. If the field has more bits than the number of pins, the most significant bits will be truncated. If the field has less bits than the number of pins, the value will be padded on the MSB end. An optional second field specifies the number format, either \code{DEC}, \code{HEX}, or \code{BIN} (default).
+\examplecmd{Get the values from pins 0-5 as a binary number where 0 is the LSB}{binary? 5-0}{110101}
+\examplecmd{Read the binary encoded number on pins 0-3 in hex}{binary? 3-0 HEX}{C}
+\examplecmd{Set the binary encoded number on pins 0-3 to 0x5}{binary 3-0 5 HEX}{OK}
+
+\section{Theory Of Operation}
+\subsection{The Power System}
+
+\subsubsection{Terminology}
+\par\noindent
+\textbf{Rails} are physical power distribution systems found on the sides of a breadboard.
+\par\noindent
+\textbf{Domains} are the power nets on the PCB. Some domains can connect to the rails.
+
+\subsubsection{Power Input}
+\bolditem{USB}
+You can power the board using the USB connector you use to communicate with it. The USB port does not support USB-PD. The USB port is protected by a 500mA polyfuse as well as a diode allowing safe connection of both power sources simultaneously. When using USB as the power source, you should limit 3.3V to 500mA.
+\bolditem{EXT}
+You can also power the board form an external power supply with a 5.5x2.1mm center positive barrel jack. You can supply any voltage from 5V to 30V. This jack is protected by a 2A polyfuse and a diode. When using the barrel jack, the full 2A output of the 3v3 regulator is available as long as the external power supply can support that much power.
+
+\subsubsection{Power Output}
+The left power rail is always powered from 3v3. The right power rail can be configured to be powered from 3v3, EXT, or USB, or it can be left unpowered. This allows you to provide your own power source to this rail. This rail can be set to USB even if EXT is present.
+
+\subsubsection{Power Domains}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|llllll|}\hline
+        Domain     & Description    & Source      & Voltage & Current     & Curret Limiter \\\hline
+        3v3        & Digital supply & VBUS        & 3.3V    & 2A or 500mA & Reg IC         \\
+        EXT        & External input & Barrel jack & 5-30V   & Max 2A      & 2A Polyfuse    \\
+        3v3A       & Analog supply  & VBUS        & 3.3V    & 300mA       & Reg ID         \\
+        USB        & USB input      & USB-C port  & 5V      & 500mA       & 500mA Polyfuse \\
+        VBUS       & System power   & EXT or USB  & 5-30V   & 2A or 500mA &                \\\hline
+    \end{tabular}
+\end{table}
+
+\bolditem{3v3 (aka 3v3D)}
+This is the main 3.3V power domain. It is powered by a switching voltage regulator from VBUS. It is used for the digital parts of the board, as well as the 3.3V output on the left power rails, and optionally the right power rails. When powered from EXT, it can supply up to 2A, although this may be limited by the board's power source. When powered from USB, it can supply up to 500mA. This domain should be used for all external digital circuitry.
+
+\bolditem{EXT}
+This is the external power source provided through the barrel jack. It is used to supply the voltage regulators if it is present. It can also be sent to the right power rails if desired. It has a total capacity of 2A which may be limited by the external power supply, and it is shared between VBUS and the breadboard power rails.
+
+\bolditem{3v3A}
+This is the analog supply. It is powered by a linear voltage regulator. It is used for the analog parts of the RP2040, and is made available for external analog circuitry on the analog pin header. This domain should be used for all external analog circuitry to reduce power supply noise.
+
+\bolditem{USB}
+This is the USB power input. It is used to supply the voltage regulators if EXT is not present. It can also be sent to the right power rails if desired. It has a total capacity of 500mA which is shared between the rails and VBUS if EXT is not present.
+
+\bolditem{VBUS}
+This is the power domain that powers the voltage regulators. It is powered by EXT if it is present, or USB. It is not accessible externally.
+
+\section{Credits}
+\begin{itemize}
+    \item The center positive symbol came from \href{https://en.m.wikipedia.org/wiki/File:Polarity_marking_center_positive.svg}{Wikipedia}. The image is in the public domain.
+    \item The firmware is built on top of \href{https://circuitpython.org/}{CircuitPython}
+\end{itemize}
 \end{document}
