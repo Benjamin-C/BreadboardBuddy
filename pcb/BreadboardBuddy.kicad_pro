@@ -100,7 +100,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -129,7 +129,7 @@
         "min_through_hole_diameter": 0.15,
         "min_track_width": 0.09999999999999999,
         "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.3,
+        "min_via_diameter": 0.39999999999999997,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -217,7 +217,7 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4,
+          "diameter": 0.5,
           "drill": 0.2
         },
         {
@@ -468,7 +468,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -479,8 +479,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.5,
+        "via_drill": 0.2,
         "wire_width": 6
       }
     ],
@@ -543,13 +543,13 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -633,16 +633,8 @@
       "Root"
     ],
     [
-      "6770eba5-153e-4da1-9a7e-22ee6a2b4978",
+      "695573fb-e2e7-4b72-8110-5b8b464395ef",
       "Microcontroller"
-    ],
-    [
-      "9083d7ce-70ca-4f3a-bdf1-372834a5669a",
-      "Connectors"
-    ],
-    [
-      "87cbadf1-0674-4bfd-aa47-853fc968bb4b",
-      "Power"
     ]
   ],
   "text_variables": {}

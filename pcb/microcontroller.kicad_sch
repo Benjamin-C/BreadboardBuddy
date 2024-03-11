@@ -2854,6 +2854,14 @@
 		(uuid "e295be4f-b463-4ec5-b9a1-8d01468adcd5")
 	)
 	(no_connect
+		(at 110.49 160.02)
+		(uuid "0412ff2c-6fef-4c76-8af8-4c69caefc401")
+	)
+	(no_connect
+		(at 195.58 125.73)
+		(uuid "31e1c204-ad41-4689-9a7b-bcfb700cc235")
+	)
+	(no_connect
 		(at 195.58 115.57)
 		(uuid "4a3f92d0-a204-4671-8c62-2e5304bcd59c")
 	)
@@ -4604,7 +4612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07f167a5-5a12-478e-b933-2daf2d586d5b")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR015"
 			(at 100.33 173.99 0)
 			(effects
 				(font
@@ -4649,12 +4657,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5fb0378c-bf5b-4fca-8049-42fdb99d185b")
+			(uuid "721bc9b3-caac-4347-99ca-c691e053fdf9")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR029")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4735,14 +4743,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e206e6a6-3939-4d23-9d70-d6a1973f3b6c")
+			(uuid "5565cd1a-0991-4c91-b50b-8517e134986f")
 		)
 		(pin "2"
-			(uuid "a01ab037-cba1-4f6e-8681-88f69d3ce326")
+			(uuid "58ebd226-d644-4ecc-9519-285628c9bf68")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "SW3")
 					(unit 1)
 				)
@@ -4821,26 +4829,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7c43795-6b63-4440-a9c4-bd2038046c82")
+			(uuid "22a4f70b-c957-42ac-af7e-c4544cc0bc43")
 		)
 		(pin "2"
-			(uuid "be9049ae-0ca6-44c5-816a-2a46aeb32463")
+			(uuid "310cfb9d-8a7c-44d3-bc9a-87354fd2e9b3")
 		)
 		(pin "3"
-			(uuid "b23d90e8-9159-4fdf-8a17-fe62ba2643a8")
+			(uuid "08357ce6-a998-45a7-8dd8-a0ad454a8ebd")
 		)
 		(pin "4"
-			(uuid "d270449c-2a30-424d-9ea2-119187118713")
+			(uuid "e65bc90c-4042-4241-84a7-6a3e42dc4c7b")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "Y1")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "Y1")
 					(unit 1)
 				)
@@ -4902,7 +4904,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -4911,7 +4913,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -4921,21 +4923,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1654fb97-ebf8-412a-9f6a-a119aa1a6270")
+			(uuid "46dc5d76-1d0e-4413-af2d-bd406ae2bc9d")
 		)
 		(pin "2"
-			(uuid "ab591ed5-0093-46a4-ac83-8d52fd2d5c99")
+			(uuid "a9cd17d8-0850-4fc6-9867-2ff8d13f146f")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -5016,14 +5012,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "daa896c7-07b6-4123-be23-0428f38c65a4")
+			(uuid "40952a6c-a260-4c6b-a2ba-11e47f610456")
 		)
 		(pin "2"
-			(uuid "6cb7bd4e-a4dc-44bf-98f2-d3faa9d5da3d")
+			(uuid "24b90796-b99b-4be6-aae4-b45fc4f6a03e")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "SW2")
 					(unit 1)
 				)
@@ -5040,7 +5036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c876e12-8276-477b-9c93-545c3c97e302")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR023"
 			(at 180.34 43.18 0)
 			(effects
 				(font
@@ -5085,12 +5081,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ba5273b8-5bd0-430b-b99b-54f4794935c7")
+			(uuid "e308d544-40ae-4650-8db5-f42682fc1426")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR04")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5169,21 +5165,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd08e6ab-ed07-42e9-9cf9-b01e411596e3")
+			(uuid "d159c093-83ad-4ec3-9089-ae0bced80693")
 		)
 		(pin "2"
-			(uuid "dfc52b88-85b1-43ac-894a-f8f67e383762")
+			(uuid "7432a923-7dd6-4979-89ae-4faed2b8e01d")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -5263,190 +5253,180 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d8237c9-5f62-4ca8-b59d-24b1250d2537")
+			(uuid "56c638bc-c7ec-49f4-8cbc-2910e0bb91d5")
 		)
 		(pin "10"
-			(uuid "51649a01-0a9f-4ffb-ab9c-2ead5b2e4878")
+			(uuid "9101d75d-5a15-4c99-8e61-68b15d411e68")
 		)
 		(pin "11"
-			(uuid "7272282d-f967-4a96-b04f-70d57104e17a")
+			(uuid "8aefaf5d-ee94-49b2-b8e8-05cfa07abb5f")
 		)
 		(pin "12"
-			(uuid "4266dcee-8fb4-4f5c-83a2-370507608239")
+			(uuid "9f06043b-4716-4ed5-b32c-e440111e067c")
 		)
 		(pin "13"
-			(uuid "92e383dc-ddea-4f64-9771-8f7104f751eb")
+			(uuid "115973c4-dcdc-474d-b052-de207a0e0c3f")
 		)
 		(pin "14"
-			(uuid "2408bef4-7d82-4a86-85c7-d250b400ad91")
+			(uuid "ba7afc89-0feb-4e38-8f6f-b495cec547a2")
 		)
 		(pin "15"
-			(uuid "3bd7970d-aced-4612-bdc5-8b4cdb4e4394")
+			(uuid "95de0b6d-4334-4aa4-8211-84259f7e21a1")
 		)
 		(pin "16"
-			(uuid "fc3b2688-7224-4e18-a46e-eab0dc035b8a")
+			(uuid "55d9c321-42cf-40cb-a610-af393177e5e3")
 		)
 		(pin "17"
-			(uuid "e9408e89-268d-4942-8828-09b0ae7b2f3a")
+			(uuid "ad86bd20-e177-4603-bfa6-83f6d4155075")
 		)
 		(pin "18"
-			(uuid "f2108520-2719-4675-9d29-ca236024d5de")
+			(uuid "4dddadc9-94aa-4536-b6be-54ce2b8140b1")
 		)
 		(pin "19"
-			(uuid "b2c3650d-4b7d-427c-8912-5ee04e55ae9a")
+			(uuid "4cee1259-dd02-44a0-9545-83e63234987b")
 		)
 		(pin "2"
-			(uuid "f5bbd73c-2510-45ed-8119-dcec275e1900")
+			(uuid "e09b7b2e-9e5c-4bde-946b-c27579906088")
 		)
 		(pin "20"
-			(uuid "3c45f993-d3d9-4f33-ac55-70c0d9f2797d")
+			(uuid "2b04dd34-fd91-4c3e-98b1-1a149c7265a0")
 		)
 		(pin "21"
-			(uuid "de440d3a-b355-4279-bc49-ed473b5fef74")
+			(uuid "770faac2-3ceb-403b-b852-dff868afa5a5")
 		)
 		(pin "22"
-			(uuid "38216186-b104-4dac-87da-641e8b1520f8")
+			(uuid "68f04bee-e661-48cf-ade2-49fd1a70f7fb")
 		)
 		(pin "23"
-			(uuid "813d1125-b579-4bdb-a795-b598e561efce")
+			(uuid "2922bef4-c084-455d-979b-9b589d35c777")
 		)
 		(pin "24"
-			(uuid "7a7e8a2e-154c-412e-98d4-d4182525f5e4")
+			(uuid "467cb009-0e22-4592-b655-4efbeafb0eaa")
 		)
 		(pin "25"
-			(uuid "41d7912e-8c4d-4915-a94e-89e679216c00")
+			(uuid "e08da60d-fa70-4e9e-830f-113d05916f98")
 		)
 		(pin "26"
-			(uuid "f934c149-f8db-40ab-bfc8-972a538a5843")
+			(uuid "02fb9cdb-07e4-44b2-a4ef-fe7d14a07509")
 		)
 		(pin "27"
-			(uuid "7cd54f55-53da-4e57-8c28-158e640b05be")
+			(uuid "92e6c8f0-f8e4-4863-8667-465975875922")
 		)
 		(pin "28"
-			(uuid "30cf6302-5207-4770-80df-6fda54049c98")
+			(uuid "f77b2965-3286-41e4-9f84-7e134f4dfb02")
 		)
 		(pin "29"
-			(uuid "6800d1e4-403f-42b2-8b3c-417da562af30")
+			(uuid "56555d91-4dae-47bd-89e0-cae8c2b7b83f")
 		)
 		(pin "3"
-			(uuid "69cd9bf5-ad36-47a3-903d-1521b4b8aeaf")
+			(uuid "ad0ce6e4-9340-4a21-b46d-bbd60ce2fd2a")
 		)
 		(pin "30"
-			(uuid "4a8357f5-d18b-49a6-8bd2-05b4f66c35e3")
+			(uuid "3ea80866-6259-460f-a7ee-c67065b1aa2b")
 		)
 		(pin "31"
-			(uuid "cd89a184-c8e2-45e4-83e4-580dd98754e5")
+			(uuid "cbe3f943-7d1d-49e1-9b60-51b92007ce39")
 		)
 		(pin "32"
-			(uuid "f7838da2-59af-4197-8a82-7337481e7a1e")
+			(uuid "61ceecd6-dfdf-4dff-ad97-817eeb92f5f6")
 		)
 		(pin "33"
-			(uuid "42d28dbc-f744-4fdf-9e7f-1b819dda5824")
+			(uuid "7a49889a-bdf3-4ed2-b147-b50251c79b3a")
 		)
 		(pin "34"
-			(uuid "e1054227-5d54-4c5b-abf7-60942f4515b1")
+			(uuid "2085ce5e-c5bc-41fa-813a-aad383236193")
 		)
 		(pin "35"
-			(uuid "c608bbd8-d7c5-4d8a-ba53-854612727cfb")
+			(uuid "1bc75385-c272-4ad1-89ab-e5789c12f292")
 		)
 		(pin "36"
-			(uuid "ecc9c4ac-833b-41c5-989b-dadc74e85f6b")
+			(uuid "61d87bab-2029-4c60-ad58-999505455e6d")
 		)
 		(pin "37"
-			(uuid "ae8a6ce5-c4e6-4770-bbf6-43ce212e36c8")
+			(uuid "aed74a2f-8bfa-4187-a730-2a6002c12ad1")
 		)
 		(pin "38"
-			(uuid "c67894da-baea-4432-a659-9dd69ea3cc55")
+			(uuid "79fb6e92-f0d5-4af5-a748-61f0ead47d68")
 		)
 		(pin "39"
-			(uuid "28d1f75a-d402-4c33-ac7c-71bd28116bad")
+			(uuid "9a792906-61f6-4413-b421-eae22c499f6b")
 		)
 		(pin "4"
-			(uuid "3b334e15-3e45-40b2-9d57-4d24095c0ffe")
+			(uuid "555c1153-fc5a-4e0b-a80a-ddaadbfb004b")
 		)
 		(pin "40"
-			(uuid "967c1c0c-8792-4c62-9bf8-dbc11f3d3018")
+			(uuid "c3d83996-ecb5-4d9f-9cbe-994c6cd49dc1")
 		)
 		(pin "41"
-			(uuid "49252286-4586-4d46-837b-6a19ee1192cb")
+			(uuid "cba6f794-307a-46a0-b8eb-309d0d86fc38")
 		)
 		(pin "42"
-			(uuid "71f5d7bd-3fbb-4986-97b5-39ebd663e5b6")
+			(uuid "aba411e1-799d-40c5-be95-7835142dfe78")
 		)
 		(pin "43"
-			(uuid "779ff46d-da49-4434-b859-613a8f0eb4ac")
+			(uuid "cf61a5d8-c03b-4a3f-9cb0-7267cf7d36e6")
 		)
 		(pin "44"
-			(uuid "859597da-49be-4d5e-9611-364e76d9168c")
+			(uuid "31383b40-4ad9-450e-ab6c-accad8944a00")
 		)
 		(pin "45"
-			(uuid "c571184a-ba57-4914-ad54-4b66357c6ea9")
+			(uuid "be6c3bee-b47d-40fe-893d-2e971295ecfa")
 		)
 		(pin "46"
-			(uuid "87b18a0f-eeec-4884-9695-0178b6a48e53")
+			(uuid "32a51814-63ff-4557-818b-a707c2aaa77b")
 		)
 		(pin "47"
-			(uuid "19a03e4a-6a39-4f60-9adb-812312185158")
+			(uuid "56d527aa-678e-48e6-a679-ec527b228d88")
 		)
 		(pin "48"
-			(uuid "8ba9161a-5584-4ee8-a12c-8ab16dbf3ed6")
+			(uuid "83eea1e9-c2eb-41d6-9a13-6154161249d5")
 		)
 		(pin "49"
-			(uuid "b674749b-20e4-4fe9-b607-dcec2302eeee")
+			(uuid "1397598c-21b6-4a8c-a212-57dcacb5858c")
 		)
 		(pin "5"
-			(uuid "9cf9da4c-f459-475c-b534-ff5fd38557cc")
+			(uuid "482753c2-3be2-4f45-a0e2-08a5c73b29c4")
 		)
 		(pin "50"
-			(uuid "87a26730-e33e-4b20-826d-1ae10a265f87")
+			(uuid "db11b8fe-a8b1-48fc-aad4-3f0dbbf8b324")
 		)
 		(pin "51"
-			(uuid "c8a10b4e-70f2-4c5e-9c95-63c5321fc95c")
+			(uuid "82562d94-223a-4dc6-92c2-2b4bf96f158a")
 		)
 		(pin "52"
-			(uuid "deee36cc-9bed-43f2-8919-27ef7c17fa7e")
+			(uuid "d0070876-12c2-4c94-971a-4c147ceb2fc6")
 		)
 		(pin "53"
-			(uuid "f823518b-b824-4fc4-a2e1-bc31a55b347f")
+			(uuid "5f5b754e-cc95-4b6a-8896-5792c3fae118")
 		)
 		(pin "54"
-			(uuid "04abaa47-d42d-442a-807d-9fdc5fecac43")
+			(uuid "49453b6e-2e64-42fc-b582-80101c8a9e6f")
 		)
 		(pin "55"
-			(uuid "98cc1184-d891-4dad-ad0a-1156b958df84")
+			(uuid "2d6b0a65-8652-4f14-a0dc-8c73a9da52ac")
 		)
 		(pin "56"
-			(uuid "6ed1b405-1f22-438b-be9c-8f71adf6ef14")
+			(uuid "f1dc4f46-10ed-4189-bc31-9e1ebc949df4")
 		)
 		(pin "57"
-			(uuid "33d2b4d0-fee5-459f-952a-3000c6bd9492")
+			(uuid "70ad08bd-817f-42b4-b559-adaf8d472d5d")
 		)
 		(pin "6"
-			(uuid "561414a1-8ca3-437a-8869-c3163361e771")
+			(uuid "f7bd3f71-5b71-4e73-9a3e-19754040dd69")
 		)
 		(pin "7"
-			(uuid "f623031a-0550-491d-8e01-45a7f46198eb")
+			(uuid "4efa6fa4-6a37-47ef-bee1-e4291d7201ec")
 		)
 		(pin "8"
-			(uuid "71ad44a1-4583-49ad-957e-df6896ef8155")
+			(uuid "585316fd-cce4-4efd-91df-462796affe03")
 		)
 		(pin "9"
-			(uuid "974b80ed-c42f-4260-9e49-7aaeec71571a")
+			(uuid "e07afd6b-40e6-4b94-9552-88c07cc52f42")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U2")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5526,21 +5506,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c58f667f-9c7c-4635-8041-ac2207c80d45")
+			(uuid "31609822-2b75-49ca-99ba-c40bb1856846")
 		)
 		(pin "2"
-			(uuid "6ec9a7b6-3f0d-40ff-8a81-9f84e3978967")
+			(uuid "657139f0-044e-45e3-889d-4dbb198c1e67")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5556,7 +5530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39d4cdfa-de6a-4687-8b32-20b16768b1f1")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR040"
 			(at 208.28 125.73 0)
 			(effects
 				(font
@@ -5601,12 +5575,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "88bd88f3-d6e8-45c6-87f3-367e89c1fa21")
+			(uuid "07a62db6-195b-4711-a33f-3c40c2aa6eca")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR042")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5667,7 +5641,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 110.49 48.26 0)
 			(effects
 				(font
@@ -5676,7 +5650,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 110.49 48.26 0)
 			(effects
 				(font
@@ -5686,21 +5660,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e9b08dc3-3487-449d-a6a2-0c36af60f316")
+			(uuid "28502eee-9871-46dd-9df5-07cb2151482e")
 		)
 		(pin "2"
-			(uuid "74010df8-e221-4a25-b6eb-5870d98613aa")
+			(uuid "d688771f-0781-4c30-b9b9-e2a56b1fc079")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -5716,7 +5684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47935124-e6ff-4857-acdd-4a405be8ca80")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR021"
 			(at 163.83 157.48 0)
 			(effects
 				(font
@@ -5761,18 +5729,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e910839-3978-4927-b223-6440d20bbc99")
+			(uuid "32d456d8-cd3d-4e2f-87d2-673a12912600")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR010")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5788,7 +5750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48fba1a0-99e2-487f-8a8e-f2cece9fd376")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR013"
 			(at 91.44 76.2 0)
 			(effects
 				(font
@@ -5833,12 +5795,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "81d008f3-7289-43d4-bd84-e1f0c0742919")
+			(uuid "c503ea91-f28a-441b-8c98-1bb1d840890b")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR023")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5918,21 +5880,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "50d31943-ef1b-4f1c-ba8c-3ac47d1668a3")
+			(uuid "b9c67ef0-e383-4225-a3ee-ba2512fd96d4")
 		)
 		(pin "2"
-			(uuid "8ef10339-581a-4fbe-9c1d-1a521975b903")
+			(uuid "a4d28db2-b54a-4812-9415-a06133904af6")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -5991,7 +5947,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1085-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 189.23 41.91 0)
 			(effects
 				(font
@@ -6000,7 +5956,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10A225KP8NNNC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 189.23 41.91 0)
 			(effects
 				(font
@@ -6010,21 +5966,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3fce6325-81a3-4a32-b28d-eef0639106c2")
+			(uuid "bcf59735-ab9a-4fdf-8821-572cbc6753e4")
 		)
 		(pin "2"
-			(uuid "d76c4054-2c4e-4b5a-b23f-c81de1eeb15f")
+			(uuid "476e1d48-0d0d-4272-8447-5c2202c82e7a")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -6039,7 +5989,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c92ffaf-2bd4-4d15-ac85-713f475452d1")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR04"
 			(at 77.47 73.66 0)
 			(effects
 				(font
@@ -6084,18 +6034,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "442122d5-2487-4e1b-bfbb-f81eb42ddc6a")
+			(uuid "f7abda50-afe2-47c6-afa8-a7ba25c679ad")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR07")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -6111,7 +6055,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77ad4f75-6b3a-4d68-b633-3635c2e4cbd8")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR016"
 			(at 106.68 121.92 0)
 			(effects
 				(font
@@ -6156,18 +6100,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3cd6310e-e296-4869-93e3-d7ad846501a0")
+			(uuid "d454ac20-848a-42c4-8672-640656463012")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR018")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6247,21 +6185,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a13c418f-09f9-47eb-b463-bb452c066990")
+			(uuid "4e9fc02c-a3de-46b6-939d-63e9c7ed6e1c")
 		)
 		(pin "2"
-			(uuid "c62ac88a-124d-4b1a-b9db-1e1eb5e9a864")
+			(uuid "7812210a-c289-49ab-915c-f9eb860c57a6")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -6322,18 +6254,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c49abef9-404e-4411-a5ef-df83f318cd70")
+			(uuid "7c5da408-6722-45cd-a51d-9fedf5326b7f")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6349,7 +6275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "940b4a7b-af02-49a7-8bbf-9624eeca4912")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR012"
 			(at 91.44 39.37 0)
 			(effects
 				(font
@@ -6394,18 +6320,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ee1d6429-faec-4123-8107-e45f5213437d")
+			(uuid "4cdcf18a-9691-4cda-9062-8f7208484e20")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR014")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6467,26 +6387,26 @@
 			)
 		)
 		(pin "3"
-			(uuid "e7dfdfcd-32c4-4fe5-8166-10dc452dd53d")
+			(uuid "ec6bbdf9-7ba2-43b3-b8f6-e93b75b4891e")
 		)
 		(pin "1"
-			(uuid "50fa2d7b-fd4e-4f33-a48d-922afc917f0a")
+			(uuid "7e88aab4-42a2-4ec9-b735-ea32f8e58e1b")
 		)
 		(pin "2"
-			(uuid "a59b06e9-1e6f-43ec-9897-a2ebc36c86cb")
+			(uuid "b368468c-97d1-48f3-82cb-c4455ef3cac4")
 		)
 		(pin "6"
-			(uuid "58423591-09df-4ac1-bfd5-b31a344ddf09")
+			(uuid "7d029790-563b-4fa5-91d9-ff7e742997a3")
 		)
 		(pin "5"
-			(uuid "72211385-e1f6-4972-ae31-a4b64ff079a3")
+			(uuid "095ec1e4-0517-46c4-bd83-1943b749bb56")
 		)
 		(pin "4"
-			(uuid "e69b8635-c66e-41f7-8a5a-36ce8487367e")
+			(uuid "2e1c30f0-6c2d-4380-8d2f-02f3bfa99d91")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "J6")
 					(unit 1)
 				)
@@ -6568,14 +6488,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f8bd988-f526-4903-b8b8-d8337bcad2ea")
+			(uuid "ddd49356-83b5-4e57-9551-06a6a05bf430")
 		)
 		(pin "2"
-			(uuid "a20046e2-8642-442e-aa02-a0e1d9dadc8e")
+			(uuid "5f9c11eb-3b10-4a1d-a554-28ca64ad6949")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "SW1")
 					(unit 1)
 				)
@@ -6637,7 +6557,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 116.84 29.21 0)
 			(effects
 				(font
@@ -6646,7 +6566,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 116.84 29.21 0)
 			(effects
 				(font
@@ -6656,21 +6576,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f4b2e8ec-76df-4b7d-80d1-0d2f5862ca4f")
+			(uuid "531bd15c-9085-455a-8e56-eb4dc13e75d4")
 		)
 		(pin "2"
-			(uuid "ab73baf0-ad4d-4d8b-8fb1-500fd9024d1e")
+			(uuid "47045e11-91a6-4119-baa2-0e25b16469d7")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -6731,7 +6645,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 140.97 29.21 0)
 			(effects
 				(font
@@ -6740,7 +6654,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 140.97 29.21 0)
 			(effects
 				(font
@@ -6750,21 +6664,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ba493048-6300-4ed5-8e2f-dee340e254d3")
+			(uuid "69c02cb4-7d8a-4724-ad0c-d8740b050702")
 		)
 		(pin "2"
-			(uuid "f51a1718-fc30-439c-9697-7aae739b1fb5")
+			(uuid "4feb67cb-b74c-4fc9-8a7f-c98d0559046b")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -6788,7 +6696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 83.82 73.66 0)
 			(effects
 				(font
@@ -6824,7 +6732,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "GMC10X5R106M10NT"
+		(property "DPN" "490-7611-1-ND"
 			(at 85.09 69.85 0)
 			(effects
 				(font
@@ -6833,7 +6741,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "4713-GMC10X5R106M10NTCT-ND"
+		(property "MPN" "GRM188R60J226MEA0D"
 			(at 85.09 69.85 0)
 			(effects
 				(font
@@ -6843,21 +6751,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fba66cb2-84a3-4d60-9842-afc45ce04c55")
+			(uuid "3cf19c67-8407-44ea-9b62-804a3519f71c")
 		)
 		(pin "2"
-			(uuid "374362ff-2e2f-44f7-9922-75cb35de42bf")
+			(uuid "42bc05e0-1d2f-4362-9fc9-f36f00e064b1")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -6934,39 +6836,33 @@
 			)
 		)
 		(pin "1"
-			(uuid "f17e439b-fcf9-46a2-a034-2c2bd8b77e0f")
+			(uuid "13707da9-152e-497b-a4a9-c29bb730716d")
 		)
 		(pin "2"
-			(uuid "d7d2e99d-ffd8-4def-9004-9cb60c27e1d2")
+			(uuid "7560ca48-403d-4d01-8716-5793b5d2c76f")
 		)
 		(pin "3"
-			(uuid "5fc170d0-af5c-4d5e-9960-9e79f71fe503")
+			(uuid "4b7acf4e-9cbe-44be-a881-f1dd33786791")
 		)
 		(pin "4"
-			(uuid "0c085a15-3e75-4c46-bf6e-9eeb79ac829c")
+			(uuid "4870a83c-45f2-41e3-b54c-b902950f96ab")
 		)
 		(pin "5"
-			(uuid "005bc70d-ee0a-4da0-b2ff-05ef555fe9e7")
+			(uuid "24fccf47-4a5e-45d3-b3d5-12cede48dd6f")
 		)
 		(pin "6"
-			(uuid "2b4688b5-22b2-43b5-8811-9774e3db4e67")
+			(uuid "53ee710d-6b16-4ed1-ba6d-3605437e97cd")
 		)
 		(pin "7"
-			(uuid "46b921ff-1da8-4e6e-be1d-392f551b6f1d")
+			(uuid "a72e8aff-6e02-42ea-b017-799f57a0b32b")
 		)
 		(pin "8"
-			(uuid "490356f4-af74-485b-bbbd-79dbf5984071")
+			(uuid "715724ae-b37b-45b9-b550-cbc880e43fa7")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7027,18 +6923,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3b6f042e-24db-42aa-a1b3-cbc80f09ac81")
+			(uuid "7c8c1d67-ef79-4119-8ec0-75ca155a2c80")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7054,7 +6944,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b97284ec-c7b6-4bc7-a2ae-ef705ed9718e")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR017"
 			(at 110.49 45.72 0)
 			(effects
 				(font
@@ -7099,17 +6989,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "5f08c21c-78e4-4764-baa8-03b377be1159")
+			(uuid "f70d4736-39af-4f42-8904-b70b2bb6f038")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "#PWR017")
 					(unit 1)
 				)
@@ -7171,7 +7055,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 104.14 29.21 0)
 			(effects
 				(font
@@ -7180,7 +7064,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 104.14 29.21 0)
 			(effects
 				(font
@@ -7190,21 +7074,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3f6eef2-a584-42d0-9594-74e3a5725a9a")
+			(uuid "868ba045-eb5f-4fb0-95f2-073b0f4c3b24")
 		)
 		(pin "2"
-			(uuid "1b76499c-7511-4185-a774-4838dae60c20")
+			(uuid "99da767e-3acc-4da0-a895-6a73b52871db")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -7265,7 +7143,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 99.06 48.26 0)
 			(effects
 				(font
@@ -7274,7 +7152,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 99.06 48.26 0)
 			(effects
 				(font
@@ -7284,21 +7162,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "434ecb50-241f-40ba-a84b-a6bd4f8d6af0")
+			(uuid "6aac174b-766e-44a6-92e4-94dd8495bf3b")
 		)
 		(pin "2"
-			(uuid "21c58ca6-344a-4b0e-8550-fd8e2521e549")
+			(uuid "de13e3cc-e9ea-409e-bfdc-11c4033d5654")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -7378,21 +7250,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f53ab1d5-b704-4e12-9330-33994927e389")
+			(uuid "8928cf31-15be-4520-91ce-c2da9df2427c")
 		)
 		(pin "2"
-			(uuid "b4f159d1-4823-4746-890b-69910885c3ad")
+			(uuid "3b3b861c-9b4a-4943-800b-feff4feb2d06")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -7408,7 +7274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d048f788-fd4f-4e7c-8097-7b4839100b79")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR018"
 			(at 110.49 60.96 0)
 			(effects
 				(font
@@ -7453,18 +7319,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "895f5caf-a7a7-4243-9da8-d8c907aeda89")
+			(uuid "ecae95e4-6b3e-4513-831e-912256866260")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR012")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7480,7 +7340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d85c68e1-9beb-4c42-b052-be9504f2e943")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR029"
 			(at 196.85 48.26 0)
 			(effects
 				(font
@@ -7525,18 +7385,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f4054a65-48f5-4d1e-a7c0-d608112dd6fa")
+			(uuid "88a488fe-d614-4a6b-a0ab-d32503c84808")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR013")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -7597,7 +7451,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 91.44 29.21 0)
 			(effects
 				(font
@@ -7606,7 +7460,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 91.44 29.21 0)
 			(effects
 				(font
@@ -7616,21 +7470,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3a1df554-eeba-4f1b-b48b-0ec1429d765e")
+			(uuid "d27cd0f3-1e8d-444b-aaee-0aedd845ba45")
 		)
 		(pin "2"
-			(uuid "ee1e156e-3cbb-4d8f-bc9f-70dec642840b")
+			(uuid "f49e2747-c244-4780-bc5d-ffb9bd96d326")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -7646,7 +7494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e963a5a8-fd20-4100-9729-7a47f95e0942")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR019"
 			(at 128.27 29.21 0)
 			(effects
 				(font
@@ -7691,18 +7539,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a93bb10b-ef8d-4f0e-8048-6e488f5a308b")
+			(uuid "a4c38a76-1a41-4e87-954e-b48a235a7713")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "#PWR015")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -7718,7 +7560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6c32ab5-60d0-4865-be71-cdec43b4b06f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR014"
 			(at 100.33 146.05 0)
 			(effects
 				(font
@@ -7763,12 +7605,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf1d442d-1b48-4916-a4ca-fc283b604949")
+			(uuid "fc0e1686-f00b-49b8-a0e2-24965ad7126b")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
-					(reference "#PWR016")
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7829,7 +7671,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "1276-1935-1-ND"
+		(property "DPN" "1276-1938-1-ND"
 			(at 153.67 29.21 0)
 			(effects
 				(font
@@ -7838,7 +7680,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNWC"
+		(property "MPN" "CL10B104KO8NFNC"
 			(at 153.67 29.21 0)
 			(effects
 				(font
@@ -7848,21 +7690,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "65fad9b7-2d10-4772-92d7-3601c4b48922")
+			(uuid "508501cb-5a77-40a0-9280-9630aed5be98")
 		)
 		(pin "2"
-			(uuid "70d43e88-b917-496e-a31e-0606a112cc19")
+			(uuid "a2784b5a-e005-45da-bd77-24d22174cc2f")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "C14")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -7940,21 +7776,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b4e714d-0791-4b03-bfa9-c113a019848f")
+			(uuid "aa494ccd-edcd-4690-bbaa-b0cfba7c5606")
 		)
 		(pin "2"
-			(uuid "bbd6eb25-cfa3-45ce-9cff-29c58110bbf3")
+			(uuid "7b9a5ea5-4271-4e3f-8f65-24630efa28c2")
 		)
 		(instances
 			(project "BreadboardBuddy"
-				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/6770eba5-153e-4da1-9a7e-22ee6a2b4978"
+				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1/695573fb-e2e7-4b72-8110-5b8b464395ef"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-			(project "buttons"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a606df9b-7133-4945-a21c-b987bfbff0f6"
-					(reference "R3")
 					(unit 1)
 				)
 			)

@@ -126,6 +126,12 @@
     }
 }
 
+\titleformat{\section}[block]
+    {}{}{0em}
+    {\begin{tcolorbox}
+        \thesection. \hspace*{\fill} #1 \hspace*{\fill}
+    \end{tcolorbox}}
+
 \usepackage{booktabs}
 
 \let\oldhref\href
@@ -155,6 +161,8 @@
 \maketitle
 
 \section{Introduction}
+
+An RP2040 microcontroller designed to fit neatly on the end of a breadboard
 
 \section{Specs}
 
