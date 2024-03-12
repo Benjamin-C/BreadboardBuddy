@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1")
 	(paper "A4")
+	(title_block
+		(title "Breadboard Buddy")
+		(date "2024-03-12")
+		(rev "v1.0")
+		(company "Benjamin Crall")
+	)
 	(lib_symbols
 		(symbol "BreadboardBuddy:AP7375_3.3v_linear_regulator"
 			(exclude_from_sim no)
@@ -5252,6 +5258,16 @@
 		)
 		(uuid "a9e2fad3-9fe8-424d-abca-4dc1f238cce9")
 	)
+	(text "TVS"
+		(exclude_from_sim no)
+		(at 72.39 98.298 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c22deac7-cf54-482b-9c67-5f1d6744021d")
+	)
 	(text "GPIO"
 		(exclude_from_sim no)
 		(at 59.69 159.766 0)
@@ -5864,7 +5880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01b6a43d-3c0b-4eaa-9a03-64c4c42e8b36")
-		(property "Reference" "C2"
+		(property "Reference" "C14"
 			(at 203.2 59.69 0)
 			(effects
 				(font
@@ -5936,7 +5952,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C2")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5952,7 +5968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "049a127b-9634-40d0-9715-7e555ad1c11e")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0102"
 			(at 45.72 38.1 0)
 			(effects
 				(font
@@ -6002,7 +6018,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR03")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -6018,7 +6034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05a5e8fe-c329-4a04-8a61-8f802e1fc251")
-		(property "Reference" "#SYM10"
+		(property "Reference" "#SYM110"
 			(at 151.384 132.08 0)
 			(effects
 				(font
@@ -6066,7 +6082,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM10")
+					(reference "#SYM110")
 					(unit 1)
 				)
 			)
@@ -6083,7 +6099,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e95bc1d-6ef8-4dec-8b6f-c726f2dedcba")
 		(property "Reference" "F2"
-			(at 86.36 68.58 90)
+			(at 86.36 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6091,7 +6107,7 @@
 			)
 		)
 		(property "Value" "500mA poly"
-			(at 86.36 71.12 90)
+			(at 86.36 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6168,7 +6184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1885219c-3d19-4381-a2e5-18dd8643c9bc")
-		(property "Reference" "R9"
+		(property "Reference" "R3"
 			(at 273.05 46.9899 0)
 			(effects
 				(font
@@ -6240,7 +6256,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R9")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6256,7 +6272,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1b094f6d-ce42-4d65-86be-2e1438af1c43")
-		(property "Reference" "J9"
+		(property "Reference" "J8"
 			(at 142.24 179.0701 0)
 			(effects
 				(font
@@ -6337,7 +6353,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "J9")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -6396,7 +6412,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "118-SRP3212A-4R7MCT-ND"
+		(property "DPN" "118-SRP3212-4R7MCT-ND"
 			(at 261.62 52.07 0)
 			(effects
 				(font
@@ -6405,7 +6421,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IND METAL POWDER 4.7UH 2.2A"
+		(property "MPN" "SRP3212-4R7M"
 			(at 261.62 52.07 0)
 			(effects
 				(font
@@ -6439,7 +6455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "257fe593-614f-4923-ab51-e9a783b4dde8")
-		(property "Reference" "#SYM7"
+		(property "Reference" "#SYM106"
 			(at 257.556 95.25 0)
 			(effects
 				(font
@@ -6487,7 +6503,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM7")
+					(reference "#SYM106")
 					(unit 1)
 				)
 			)
@@ -6500,23 +6516,25 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2de05544-2cfb-4ffd-bde2-db151f6d7deb")
 		(property "Reference" "D4"
-			(at 184.15 62.5475 0)
+			(at 180.34 61.2774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "LED_GREEN"
-			(at 181.61 62.5475 0)
+			(at 180.34 63.8174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -6589,7 +6607,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "302b8d2a-c77c-4e0a-9fb3-bfe542efcff7")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0119"
 			(at 78.74 105.41 0)
 			(effects
 				(font
@@ -6639,7 +6657,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR08")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -6655,7 +6673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3035c391-577a-47b5-b3af-8f7a22133474")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR0108"
 			(at 162.56 53.34 0)
 			(effects
 				(font
@@ -6705,7 +6723,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR033")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -6896,7 +6914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37522330-f06e-4965-af7f-c9626c157be2")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR0110"
 			(at 265.43 54.61 0)
 			(effects
 				(font
@@ -6946,7 +6964,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR036")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -6962,7 +6980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38a8d096-251a-493b-a247-f383dc0d9d8e")
-		(property "Reference" "#SYM3"
+		(property "Reference" "#SYM103"
 			(at 171.196 86.36 0)
 			(effects
 				(font
@@ -7010,7 +7028,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM3")
+					(reference "#SYM103")
 					(unit 1)
 				)
 			)
@@ -7025,7 +7043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "429191ad-0521-4679-a521-9c913a8dafe1")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 95.25 84.582 90)
 			(effects
 				(font
@@ -7095,7 +7113,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R3")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7111,7 +7129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4afee51c-b9a0-4c26-bd22-5e91eb69205a")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR0124"
 			(at 229.87 151.13 0)
 			(effects
 				(font
@@ -7161,7 +7179,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR022")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -7308,7 +7326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cd7f678-7419-492e-b63a-83fc15d3860e")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR0109"
 			(at 200.66 54.61 0)
 			(effects
 				(font
@@ -7358,7 +7376,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR028")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -7373,7 +7391,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "577128eb-210a-4c9e-881a-10efe28412bc")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0118"
 			(at 68.58 87.63 0)
 			(effects
 				(font
@@ -7423,7 +7441,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR07")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -7439,7 +7457,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58974c80-9c48-425d-b698-2237475f59a2")
-		(property "Reference" "C19"
+		(property "Reference" "C17"
 			(at 251.46 40.64 90)
 			(effects
 				(font
@@ -7509,7 +7527,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C19")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -7525,7 +7543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b3a6787-2ddb-4aab-9d71-30ac5573742b")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR0120"
 			(at 255.27 113.03 0)
 			(effects
 				(font
@@ -7575,7 +7593,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR026")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -7590,7 +7608,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b875886-c0bb-4657-944c-f68807a7b996")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR0122"
 			(at 236.22 139.7 0)
 			(effects
 				(font
@@ -7640,7 +7658,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR025")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -7656,7 +7674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e8585e8-8fe3-491f-a58f-cfcc33ece59f")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR0106"
 			(at 176.53 46.99 0)
 			(effects
 				(font
@@ -7706,7 +7724,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR034")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -7722,7 +7740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f52b59f-8b3a-4d96-b5c3-68805a03c3d2")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR0123"
 			(at 267.97 144.78 0)
 			(effects
 				(font
@@ -7772,7 +7790,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR027")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -7788,7 +7806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "629b0d1e-6233-4b69-b28e-dbf0a7d51465")
-		(property "Reference" "#SYM12"
+		(property "Reference" "#SYM111"
 			(at 210.82 145.034 0)
 			(effects
 				(font
@@ -7836,7 +7854,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM12")
+					(reference "#SYM111")
 					(unit 1)
 				)
 			)
@@ -7852,7 +7870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b2340df-0840-46b9-86f1-aae6859f6aa8")
-		(property "Reference" "U5"
+		(property "Reference" "U3"
 			(at 234.95 44.45 0)
 			(effects
 				(font
@@ -7934,7 +7952,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "U5")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -7950,7 +7968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6eec0975-a074-4ce1-9cbc-11248dcfbdbe")
-		(property "Reference" "#SYM5"
+		(property "Reference" "#SYM104"
 			(at 187.706 86.36 0)
 			(effects
 				(font
@@ -7998,7 +8016,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM5")
+					(reference "#SYM104")
 					(unit 1)
 				)
 			)
@@ -8014,7 +8032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78081f04-dcf5-4839-b4c3-3dcdc259f549")
-		(property "Reference" "#SYM8"
+		(property "Reference" "#SYM109"
 			(at 143.764 132.08 0)
 			(effects
 				(font
@@ -8062,7 +8080,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM8")
+					(reference "#SYM109")
 					(unit 1)
 				)
 			)
@@ -8163,7 +8181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b48a9de-8f9a-47a5-82fe-d9b8a0fd9f1b")
-		(property "Reference" "#SYM9"
+		(property "Reference" "#SYM113"
 			(at 148.336 149.86 0)
 			(effects
 				(font
@@ -8211,7 +8229,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM9")
+					(reference "#SYM113")
 					(unit 1)
 				)
 			)
@@ -8227,7 +8245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f3e643e-0832-459d-9bcd-f291ff831024")
-		(property "Reference" "D5"
+		(property "Reference" "D3"
 			(at 274.32 58.7374 90)
 			(effects
 				(font
@@ -8299,7 +8317,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "D5")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8315,7 +8333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8073ed7e-3acf-4d1a-865a-5b2075c3d34c")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 261.62 110.49 0)
 			(effects
 				(font
@@ -8391,7 +8409,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8406,7 +8424,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81023597-af5e-4c16-a8fb-7a0ee4cfb858")
-		(property "Reference" "R4"
+		(property "Reference" "R8"
 			(at 95.25 93.98 90)
 			(effects
 				(font
@@ -8476,7 +8494,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R4")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8492,7 +8510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81287829-924d-4ecd-8e4d-38059d5e3f16")
-		(property "Reference" "#SYM14"
+		(property "Reference" "#SYM107"
 			(at 127 100.076 0)
 			(effects
 				(font
@@ -8540,7 +8558,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM14")
+					(reference "#SYM107")
 					(unit 1)
 				)
 			)
@@ -8556,7 +8574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8538a912-8a0f-47ff-989d-7bca90821dae")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR0112"
 			(at 234.95 71.12 0)
 			(effects
 				(font
@@ -8606,7 +8624,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR032")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -8622,8 +8640,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8870528b-55af-4052-a3e2-3aed9d1bf360")
-		(property "Reference" "C17"
-			(at 166.37 54.61 0)
+		(property "Reference" "C19"
+			(at 166.37 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8632,7 +8650,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 166.37 57.15 0)
+			(at 166.37 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8694,7 +8712,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C17")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -8710,7 +8728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ec620c2-a460-47c2-bcee-8dac1d7c7823")
-		(property "Reference" "J7"
+		(property "Reference" "J6"
 			(at 78.74 172.7199 0)
 			(effects
 				(font
@@ -8800,7 +8818,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "J7")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8816,7 +8834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "907d76fc-e117-40fa-b593-1a887c6e4148")
-		(property "Reference" "#SYM2"
+		(property "Reference" "#SYM102"
 			(at 247.396 30.48 0)
 			(effects
 				(font
@@ -8864,7 +8882,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM2")
+					(reference "#SYM102")
 					(unit 1)
 				)
 			)
@@ -8879,7 +8897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95162793-e436-4dfc-81b7-2b7c11206d25")
-		(property "Reference" "C1"
+		(property "Reference" "C20"
 			(at 30.48 116.84 0)
 			(effects
 				(font
@@ -8951,7 +8969,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C1")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -8967,7 +8985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "960e4a50-3004-4274-b6df-2c4637cfa116")
-		(property "Reference" "#SYM6"
+		(property "Reference" "#SYM112"
 			(at 140.716 149.86 0)
 			(effects
 				(font
@@ -9015,7 +9033,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM6")
+					(reference "#SYM112")
 					(unit 1)
 				)
 			)
@@ -9031,7 +9049,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96d26586-fe2c-41d2-bc3b-d1aa63ba2942")
-		(property "Reference" "C16"
+		(property "Reference" "C18"
 			(at 137.16 54.61 0)
 			(effects
 				(font
@@ -9103,7 +9121,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C16")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -9119,7 +9137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99e7b933-6f12-4243-8d4e-7f0f94610c20")
-		(property "Reference" "R5"
+		(property "Reference" "R4"
 			(at 209.55 50.8 90)
 			(effects
 				(font
@@ -9189,7 +9207,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -9205,7 +9223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ba88c04-371c-4ca9-9922-1ae21994554a")
-		(property "Reference" "#SYM11"
+		(property "Reference" "#SYM114"
 			(at 155.956 149.86 0)
 			(effects
 				(font
@@ -9253,7 +9271,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM11")
+					(reference "#SYM114")
 					(unit 1)
 				)
 			)
@@ -9269,8 +9287,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e88f72d-2af9-46c6-b27c-8dc5226712ce")
-		(property "Reference" "C18"
-			(at 252.73 59.69 0)
+		(property "Reference" "C15"
+			(at 252.73 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9279,7 +9297,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 252.73 62.23 0)
+			(at 252.73 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9341,7 +9359,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C18")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -9357,7 +9375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f2458d5-b5e9-448c-a997-86b2066c6108")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0104"
 			(at 44.45 48.26 0)
 			(effects
 				(font
@@ -9407,7 +9425,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR02")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -9422,7 +9440,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f995fa4-ad28-413f-9343-f692e0a01646")
-		(property "Reference" "R1"
+		(property "Reference" "R5"
 			(at 58.42 76.2 90)
 			(effects
 				(font
@@ -9492,7 +9510,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R1")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -9508,7 +9526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6bd1406-c99f-435a-bb64-9304422d3b90")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0121"
 			(at 35.56 134.62 0)
 			(effects
 				(font
@@ -9558,7 +9576,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR01")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -9568,13 +9586,13 @@
 		(lib_id "Graphic:SYM_Arrow_Large")
 		(at 167.64 30.48 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7057454-c14c-4f06-babe-8b00992d3292")
-		(property "Reference" "#SYM1"
+		(property "Reference" "#SYM101"
 			(at 169.926 30.48 0)
 			(effects
 				(font
@@ -9619,19 +9637,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 167.64 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM1")
+					(reference "#SYM101")
 					(unit 1)
 				)
 			)
@@ -9647,7 +9656,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7490f17-b7c7-4431-a636-651befc35a49")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR0105"
 			(at 270.51 45.72 0)
 			(effects
 				(font
@@ -9697,7 +9706,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR037")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -9713,7 +9722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa8facc5-899e-4bab-bbfd-55b1973e0817")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0101"
 			(at 60.96 35.56 0)
 			(effects
 				(font
@@ -9763,7 +9772,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR06")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -9779,7 +9788,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aab75fb6-a9f3-4c83-83db-f996d47637b5")
-		(property "Reference" "J3"
+		(property "Reference" "J5"
 			(at 248.92 153.67 0)
 			(effects
 				(font
@@ -9861,7 +9870,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "J3")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -9877,7 +9886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab46b53d-1bc5-4f6f-9e16-987dc2a8ee74")
-		(property "Reference" "#SYM4"
+		(property "Reference" "#SYM105"
 			(at 242.316 95.25 0)
 			(effects
 				(font
@@ -9925,7 +9934,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM4")
+					(reference "#SYM105")
 					(unit 1)
 				)
 			)
@@ -9941,7 +9950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab596ea8-8643-4181-9ac5-97f9c14251c2")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR0111"
 			(at 152.4 68.58 0)
 			(effects
 				(font
@@ -9991,7 +10000,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR031")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -10007,7 +10016,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad1c8010-fc65-4d01-95e3-3e779eb71317")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR0114"
 			(at 176.53 73.66 0)
 			(effects
 				(font
@@ -10057,7 +10066,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR035")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -10073,7 +10082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b08a41e0-ef42-4d88-a6aa-84b2e18314b5")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR0107"
 			(at 140.97 53.34 0)
 			(effects
 				(font
@@ -10123,7 +10132,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR030")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -10139,7 +10148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba2c9834-7fa1-4f6c-919f-4bc4200c4ae0")
-		(property "Reference" "#SYM13"
+		(property "Reference" "#SYM108"
 			(at 139.7 95.504 0)
 			(effects
 				(font
@@ -10187,7 +10196,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#SYM13")
+					(reference "#SYM108")
 					(unit 1)
 				)
 			)
@@ -10203,7 +10212,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bafb9668-00e3-4077-a16a-9af2eedab48b")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR0113"
 			(at 270.51 71.12 0)
 			(effects
 				(font
@@ -10253,7 +10262,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR038")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -10269,7 +10278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bec92a78-f65e-4415-a5f3-814ab63757fa")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR0103"
 			(at 78.74 38.1 0)
 			(effects
 				(font
@@ -10319,7 +10328,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR09")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -10335,8 +10344,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2688d26-27dd-46cd-824c-5f93bcace5b1")
-		(property "Reference" "C20"
-			(at 265.43 59.69 0)
+		(property "Reference" "C16"
+			(at 265.43 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10345,7 +10354,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 265.43 62.23 0)
+			(at 265.43 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10407,7 +10416,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "C20")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -10422,7 +10431,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4a2d60f-8c72-4bae-a156-31d439c197f8")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR0115"
 			(at 58.42 77.47 0)
 			(effects
 				(font
@@ -10472,7 +10481,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR05")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -10488,7 +10497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c91307bf-65ed-45a9-ad30-289bf46ab253")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR0117"
 			(at 118.11 77.47 0)
 			(effects
 				(font
@@ -10538,7 +10547,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR024")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -10554,7 +10563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb1cc40b-5230-40ce-8132-6c6b30cad8c4")
-		(property "Reference" "J8"
+		(property "Reference" "J7"
 			(at 113.03 172.7199 0)
 			(effects
 				(font
@@ -10644,7 +10653,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -10659,7 +10668,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d63c40f1-5685-419d-bbbc-d7c5e155bed2")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 107.95 68.58 0)
 			(effects
 				(font
@@ -10729,7 +10738,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -10745,7 +10754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e22e3491-4499-4a7a-91b5-d608ec053212")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR0125"
 			(at 130.81 172.72 0)
 			(effects
 				(font
@@ -10795,7 +10804,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR039")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -10811,7 +10820,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2c36434-5e72-4bc0-b6dd-d352b510fecd")
-		(property "Reference" "U1"
+		(property "Reference" "U5"
 			(at 76.5459 80.01 0)
 			(effects
 				(font
@@ -10895,7 +10904,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "U1")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -10908,10 +10917,10 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e4a19447-8843-4936-b414-2c48652661f1")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 179.07 49.5299 0)
 			(effects
 				(font
@@ -10983,7 +10992,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -10999,7 +11008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0deffb3-a4eb-408c-8fa9-4043ef320e21")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 261.62 124.46 0)
 			(effects
 				(font
@@ -11075,7 +11084,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -11090,7 +11099,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9a3f284-45b8-4414-9bcd-6344e59a7115")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 58.42 83.82 90)
 			(effects
 				(font
@@ -11160,7 +11169,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "R2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -11176,7 +11185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd58256e-b92c-4ecc-a35c-42c526f84034")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 152.4 45.72 0)
 			(effects
 				(font
@@ -11249,7 +11258,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -11264,7 +11273,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff128204-343c-420a-bf87-5504a24f6ad7")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR0116"
 			(at 96.52 77.47 0)
 			(effects
 				(font
@@ -11314,7 +11323,7 @@
 		(instances
 			(project "BreadboardBuddy"
 				(path "/3b6cb8dd-6c5e-4d29-a7f7-a90d02bed0b1"
-					(reference "#PWR020")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)

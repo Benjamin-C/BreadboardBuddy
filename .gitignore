@@ -18,6 +18,7 @@ _autosave-*
 fp-info-cache
 *.lck
 \#*
+pcb/fab*
 
 # Netlist files (exported from Eeschema)
 *.net
