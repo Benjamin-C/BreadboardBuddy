@@ -1,3 +1,5 @@
+docs-nocopy/
+pcb/*.html
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
@@ -16,9 +18,6 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-*.lck
-\#*
-pcb/fab*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -30,6 +29,3 @@ pcb/fab*
 # Exported BOM files
 *.xml
 *.csv
-
-# Copyrighted documents
-docs-nocopy
