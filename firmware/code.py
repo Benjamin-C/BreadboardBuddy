@@ -4,7 +4,7 @@ import digitalio
 import pwmio
 import microcontroller
 
-fwversion = "1.0 4/11/24"
+fwversion = "1.0.1 5/12/26"
 
 print()
 
@@ -166,7 +166,7 @@ class Command():
 
 class HelpCommand(Command):
     def onQuestion(self, pins: list[AssignablePin], names: list[str], arg: list[str]):
-        print("BreadBoard Buddy firmware v{fwversion}")
+        print(f"BreadBoard Buddy firmware v{fwversion}")
         print("Commands:")
         print("  `mode? <pins>`")
         print("  `mode <pins> <modes>`")
@@ -488,9 +488,17 @@ while True:
         print("An error occurred during the parsing of the command, aborting")
         continue
     if verb in commands:
+        debugCmds = True
         if isQuestion:
             commands[verb].onQuestion(pins, pinNames, args)
         else:
-            commands[verb].onInstruction(pins, pinNames, args)
+            try:
+                commands[verb].onInstruction(pins, pinNames, args)
+            except Exception as e:
+                print("There was an error execuing the command.")
+                print("If the command acted on multiple pins, some may not have been done")
+                print("Running the command individually on each pin may help find the issue")
+                if debugCmds:
+                    print("Error:", e)
     else:
         print('Please tell me what to do. You can ask "help?" if you need help.')
