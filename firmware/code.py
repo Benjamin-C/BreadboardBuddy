@@ -488,17 +488,16 @@ while True:
         print("An error occurred during the parsing of the command, aborting")
         continue
     if verb in commands:
-        debugCmds = True
-        if isQuestion:
-            commands[verb].onQuestion(pins, pinNames, args)
-        else:
-            try:
+        try:
+            if isQuestion:
+                commands[verb].onQuestion(pins, pinNames, args)
+            else:
                 commands[verb].onInstruction(pins, pinNames, args)
-            except Exception as e:
-                print("There was an error execuing the command.")
-                print("If the command acted on multiple pins, some may not have been done")
-                print("Running the command individually on each pin may help find the issue")
-                if debugCmds:
-                    print("Error:", e)
+        except Exception as e:
+            print("There was an error execuing the command.")
+            print("If the command acted on multiple pins, some may not have been done")
+            print("Running the command individually on each pin may help find the issue")
+            if debugCmds:
+                print("Error:", e)
     else:
         print('Please tell me what to do. You can ask "help?" if you need help.')
