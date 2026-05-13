@@ -2,7 +2,7 @@
 
 An RP2040 microcontroller designed to fit neatly on the end of a breadboard
 
-TODO check HV caps if they are actually HV
+Important: Some software features listed here are not yet implemented. Run the `help` command to see the commands actually implemented in the current firmware version
 
 # Specs
 ### Power
